@@ -1,14 +1,265 @@
 @media (min-width: 1024px) {
+  body {
+    background: #f0f2f5;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    color: #050505;
+  }
+
+  .cover-photo {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 0 0 16px 16px;
+    img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      display: block;
+      border-radius: 0 0 16px 16px;
+    }
+    .cover-avatar {
+      position: absolute;
+      left: 60px;
+      bottom: -64px;
+      width: 168px;
+      height: 168px;
+      border-radius: 50%;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      z-index: 10;
+      img {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        border: 6px solid #fff;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .profile-header {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 0 0 8px 8px;
+    box-shadow: none;
+    padding: 0 32px 16px 260px;
+    position: relative;
+    top: -60px;
+    z-index: 2;
+    .profile-header-main {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 32px;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin: 0 0 4px 0;
+      font-weight: 700;
+    }
+    .profile-followers {
+      font-size: 1.1rem;
+      color: #65676b;
+      margin-bottom: 8px;
+    }
+    .profile-avatars {
+      display: flex;
+      gap: 0;
+      margin-bottom: 8px;
+      img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        margin-left: -8px;
+        &:first-child { margin-left: 0; }
+      }
+    }
+    .profile-actions {
+      display: flex;
+      gap: 8px;
+      button {
+        padding: 10px 18px;
+        border-radius: 6px;
+        border: none;
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .msg-btn {
+        background: #1877f2;
+        color: #fff;
+      }
+      .like-btn {
+        background: #e4e6eb;
+        color: #050505;
+      }
+      .search-btn {
+        background: #f0f2f5;
+        color: #050505;
+      }
+      .icon {
+        font-size: 1.1em;
+      }
+    }
+  }
+
+  .fb-tabs {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #fff;
+    border-bottom: 1px solid #dddfe2;
+    ul {
+      display: flex;
+      gap: 16px;
+      list-style: none;
+      margin: 0;
+      padding: 0 24px;
+      li {
+        padding: 16px 0 12px 0;
+        font-size: 1.1rem;
+        color: #65676b;
+        cursor: pointer;
+        border-bottom: 3px solid transparent;
+        &.active {
+          color: #1877f2;
+          border-bottom: 3px solid #1877f2;
+          font-weight: 600;
+          background: transparent;
+        }
+      }
+    }
+  }
+
+  .fb-info-bar {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #f5f6f7;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    margin-top: 16px;
+    font-size: 1rem;
+    button.fb-blue-btn {
+      background: #1877f2;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 8px 18px;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+    }
+  }
+
   .fb-main {
     display: flex;
     gap: 24px;
-    max-width: 1200px;
-    margin: auto;
+    max-width: 1100px;
+    margin: 24px auto 0 auto;
+    align-items: flex-start;
     .fb-left {
-      width: 350px;
+      flex: 0 0 340px;
+      .card {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+        padding: 20px 24px;
+        margin-bottom: 16px;
+        h2 {
+          font-size: 1.2rem;
+          margin: 0 0 8px 0;
+          font-weight: 700;
+        }
+        p, ul, li {
+          font-size: 1rem;
+          color: #050505;
+        }
+        ul {
+          padding-left: 0;
+          margin: 0 0 8px 0;
+          list-style: none;
+        }
+        li {
+          margin-bottom: 2px;
+        }
+        a {
+          color: #1877f2;
+          text-decoration: none;
+        }
+        button.fb-blue-btn {
+          background: #e7f3ff;
+          color: #1877f2;
+          border: none;
+          border-radius: 6px;
+          padding: 4px 12px;
+          font-size: 1rem;
+          font-weight: 500;
+          cursor: pointer;
+          margin-top: 4px;
+        }
+      }
     }
     .fb-feed {
-      flex: 1;
+      flex: 1 1 0;
+      .card {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+        padding: 20px 24px;
+        margin-bottom: 16px;
+        .fb-post-header {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          margin-bottom: 8px;
+          .fb-post-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+          .fb-post-date {
+            color: #65676b;
+            font-size: 0.95rem;
+          }
+          .fb-dot {
+            font-size: 1.2rem;
+            vertical-align: middle;
+          }
+        }
+        .fb-post-content {
+          font-size: 1rem;
+          color: #050505;
+          a {
+            color: #1877f2;
+            text-decoration: none;
+          }
+          .fb-post-images {
+            display: flex;
+            gap: 8px;
+            margin-top: 8px;
+            img {
+              width: 120px;
+              height: 90px;
+              object-fit: cover;
+              border-radius: 8px;
+            }
+          }
+        }
+      }
     }
   }
 }

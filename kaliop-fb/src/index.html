@@ -1,60 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kaliop Poland</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <div class="cover-photo">
-    <img src="/kaliop-fb/src/scss/assets/fon.png" alt="Cover Photo">
+    <img src="./scss/assets/fon.png" alt="Cover Photo">
     <div class="cover-avatar">
       <img src="./scss/assets/logo.png" alt="Profile Avatar">
     </div>
   </div>
-  <div class="profile-nav">
-    <div class="profile-info">
-      <h1>Kaliop Poland</h1>
-      <p class="followers">403 likes · 458 followers</p>
+  <div class="profile-header">
+    <div class="profile-header-main">
+      <div>
+        <h1>Kaliop Poland</h1>
+        <div class="profile-followers">403 polubienia · 458 obserwujących</div>
+        <div class="profile-avatars">
+          <img src="./scss/assets/pexels-danxavier-1239291.jpg" alt="">
+          <img src="./scss/assets/pexels-hannah-nelson-390257-1065084.jpg" alt="">
+          <img src="./scss/assets/pexels-moose-photos-170195-1587009.jpg" alt="">
+          <img src="./scss/assets/pexels-olly-712513.jpg" alt="">
+          <img src="./scss/assets/pexels-olly-733872.jpg" alt="">
+          <img src="./scss/assets/pexels-olly-774909.jpg" alt="">
+        </div>
+      </div>
       <div class="profile-actions">
-        <button class="msg-btn">Wyślij wiadomość</button>
-        <button class="like-btn">Lubię to</button>
-        <input class="search-input" type="text" placeholder="Szukaj">
+        <button class="msg-btn"><i class="fab fa-facebook-messenger"></i> Wyślij wiadomość</button>
+        <button class="like-btn"><i class="fas fa-thumbs-up"></i> Lubię to</button>
+        <button class="search-btn"><i class="fas fa-search"></i> Szukaj</button>
       </div>
     </div>
-    <div class="page-nav">
-      <ul>
-        <li class="active">Posts</li>
-        <li>Information</li>
-        <li>Mentions</li>
-        <li>More</li>
-      </ul>
-    </div>
+  </div>
+  <div class="fb-tabs">
+    <ul>
+      <li class="active">Posty</li>
+      <li>Informacje</li>
+      <li>Wzmianki</li>
+      <li>Opinie</li>
+      <li>Obserwujący</li>
+      <li>Zdjęcia</li>
+      <li>Więcej</li>
+    </ul>
+  </div>
+  <div class="fb-info-bar">
+    <span>Przełącz na stronę Kaliop Poland, aby zacząć nią zarządzać.</span>
+    <button class="fb-blue-btn">Przełącz teraz</button>
   </div>
   <div class="fb-main">
     <div class="fb-left">
       <div class="card">
-        <h2>Presentation</h2>
-        <p>IT solutions provider with 20 years of experience.</p>
+        <h2>Prezentacja</h2>
+        <p>Dostawca rozwiązań IT dla biznesu. 20 lat doświadczeń na rynku, setki zrealizowanych projektów.</p>
         <ul>
+          <li><b>Strona</b> · Usługi biznesowe</li>
           <li>Portowa 13B, Słupskie, Poland</li>
-          <li>+48 59 841 37 14</li>
+          <li>59 841 37 14</li>
           <li>biuro@kaliop.pl</li>
+          <li><a href="#">kaliop.pl</a></li>
+          <li><button class="fb-blue-btn">Promuj witrynę</button></li>
+          <li style="color:#f02849;">Zamknięte teraz</li>
+          <li>Jeszcze nie oceniono (0 opinii)</li>
         </ul>
       </div>
     </div>
     <div class="fb-feed">
       <div class="card">
-        <div class="card-header">Post Title</div>
-        <div class="card-content">
-          <p>Discussion at the IT institute...</p>
-          <div class="card-images">
-            <img src="./scss/assets/photo_2025-06-10_19-06-07.jpg" alt="Post Photo 1">
-            <img src="./scss/assets/photo_2025-06-10_19-06-20.jpg" alt="Post Photo 2">
+        <div class="fb-post-header">
+          <img src="./scss/assets/logo.png" alt="Kaliop Poland" class="fb-post-avatar">
+          <div>
+            <b>Kaliop Poland</b><br>
+            <span class="fb-post-date">21 czerwca o 08:51 · <span class="fb-dot">·</span></span>
+          </div>
+        </div>
+        <div class="fb-post-content">
+          <p>
+            Kolejne spotkanie Rady Pracodawców w <a href="#">Instytut Nauk Ścisłych i Technicznych</a> za nami! ⭐<br>
+            Rozmawialiśmy o czymś dużym — Centrum Nowoczesnych Technologii. 🚀 Jest to działanie długoterminowe, ale nie możemy wyjawiać za wiele.<br>
+            Trzymamy kciuki, żeby nadszedł moment, gdzie mówić o nim będą wszyscy. <span>🤞</span>
+          </p>
+          <div class="fb-post-images">
+            <img src="./scss/assets/photo_2025-06-10_19-06-07.jpg" alt="">
+            <img src="./scss/assets/photo_2025-06-10_19-06-20.jpg" alt="">
           </div>
         </div>
       </div>
     </div>
   </div>
+  <script type="module" src="./main.js"></script>
 </body>
 </html>
