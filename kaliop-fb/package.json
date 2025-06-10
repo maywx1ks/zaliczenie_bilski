@@ -1,14 +1,14 @@
 {
-  "name": "kaliop-fb",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "kaliop-facebook-clone",
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
+  "dependencies": {},
   "devDependencies": {
-    "vite": "^6.3.5"
+    "sass": "^1.75.0",
+    "vite": "^5.0.0"
   }
 }
