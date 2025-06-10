@@ -1,0 +1,28 @@
+.card {
+  background: #fff;
+  border-radius: $border-radius;
+  box-shadow: $shadow;
+  padding: 16px;
+  margin-bottom: 16px;
+
+  .card-header {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .card-content {
+    font-size: 0.9rem;
+    color: $text-color;
+    .card-images {
+      display: flex;
+      gap: 8px;
+      img {
+        width: 100px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: $border-radius;
+      }
+    }
+  }
+}
