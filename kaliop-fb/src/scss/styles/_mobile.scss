@@ -1,14 +1,14 @@
-@media (min-width: 1024px) {
-  .fb-main {
-    display: flex;
-    gap: 24px;
-    max-width: 1200px;
-    margin: auto;
-    .fb-left {
-      width: 350px;
-    }
-    .fb-feed {
-      flex: 1;
+@media (max-width: 600px) {
+  .cover-avatar img {
+    width: 80px;
+    height: 80px;
+  }
+  .profile-nav {
+    .profile-actions {
+      flex-direction: column;
+      button {
+        width: 100%;
+      }
     }
   }
 }
